@@ -1,0 +1,96 @@
+2018-10-20 19:39:27 Warning: Warning (2): PDO::exec(): MySQL server has gone away in [C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php, line 111]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+PDO::exec() - [internal], line ??
+Cake\Database\Driver\Mysql::connect() - CORE\src\Database\Driver\Mysql.php, line 111
+Cake\Database\Schema\BaseSchema::__construct() - CORE\src\Database\Schema\BaseSchema.php, line 45
+Cake\Database\Driver\Mysql::schemaDialect() - CORE\src\Database\Dialect\MysqlDialectTrait.php, line 63
+Cake\Database\Schema\Collection::__construct() - CORE\src\Database\Schema\Collection.php, line 52
+Cake\Database\Schema\CachedCollection::__construct() - CORE\src\Database\Schema\CachedCollection.php, line 42
+Cake\Database\Connection::getSchemaCollection() - CORE\src\Database\Connection.php, line 391
+Bake\Shell\Task\ModelTask::_getAllTables() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 1049
+Bake\Shell\Task\ModelTask::listAll() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 1003
+Bake\Shell\Task\ModelTask::getAssociations() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 213
+Bake\Shell\Task\ModelTask::getTableContext() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 131
+Bake\Shell\Task\ModelTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 114
+Bake\Shell\Task\ModelTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 273
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 274
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-20 19:39:28 Warning: Warning (2): PDO::exec(): Error reading result set's header in [C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php, line 111]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+PDO::exec() - [internal], line ??
+Cake\Database\Driver\Mysql::connect() - CORE\src\Database\Driver\Mysql.php, line 111
+Cake\Database\Schema\BaseSchema::__construct() - CORE\src\Database\Schema\BaseSchema.php, line 45
+Cake\Database\Driver\Mysql::schemaDialect() - CORE\src\Database\Dialect\MysqlDialectTrait.php, line 63
+Cake\Database\Schema\Collection::__construct() - CORE\src\Database\Schema\Collection.php, line 52
+Cake\Database\Schema\CachedCollection::__construct() - CORE\src\Database\Schema\CachedCollection.php, line 42
+Cake\Database\Connection::getSchemaCollection() - CORE\src\Database\Connection.php, line 391
+Bake\Shell\Task\ModelTask::_getAllTables() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 1049
+Bake\Shell\Task\ModelTask::listAll() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 1003
+Bake\Shell\Task\ModelTask::getAssociations() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 213
+Bake\Shell\Task\ModelTask::getTableContext() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 131
+Bake\Shell\Task\ModelTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 114
+Bake\Shell\Task\ModelTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 273
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 51
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 274
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 342
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 164
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2018-10-20 19:39:28 Error: [PDOException] SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php on line 111
+Stack Trace:
+#0 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(111): PDO->exec('SET NAMES utf8m...')
+#1 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#2 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#3 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#4 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#5 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Connection.php(391): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#6 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1049): Cake\Database\Connection->getSchemaCollection()
+#7 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->_getAllTables()
+#8 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(213): Bake\Shell\Task\ModelTask->listAll()
+#9 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#10 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'galeries', 'Galeries')
+#11 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Galeries')
+#12 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Galeries')
+#13 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Galeries', 0)
+#14 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#15 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('galeries')
+#16 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#17 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#18 C:\Users\elder\Desktop\cms-pweb\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#19 {main}
+
+
+2018-10-20 19:47:16 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'u491508203_pweb2.question' doesn't exist in C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Schema\Collection.php on line 131
+Stack Trace:
+#0 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'question', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('question', Array)
+#2 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('question')
+#3 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(221): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(131): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(114): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'question', 'Question')
+#7 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Question')
+#8 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Question')
+#9 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Question', 0)
+#10 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#11 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('question')
+#12 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\Users\elder\Desktop\cms-pweb\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\Users\elder\Desktop\cms-pweb\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
